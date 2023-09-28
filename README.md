@@ -6,23 +6,23 @@ SSE2 and AVX2 implementations based on code from Cryptopp. Avx512 code - made by
 
 Some little benchmarking (Ryzen 9 7950X):
 Avx512:
-Encrypting 65536 bytes x 1000000 times: 9350.129 ms
+Encrypting 65536 bytes x 1000000 times: 9350.129ms
 255 bytes x 1000000 times: 90.367ms
 64 bytes x 1000000 times : 77.506ms
 
 Avx2:
-17026.156 ms
+17026.156ms
 142.672ms
 68.288ms
 
 Sse2:
-32344.930 ms
+32344.930ms
 276.484ms
 67.759ms
 
 
 Portable version (non-simd):
-135420.469 ms
+135420.469ms
 555.392ms
 133.622ms
 
