@@ -2,8 +2,6 @@
 #ifndef CHACHA20_H
 #define CHACHA20_H
 
-#define USE_AVX512
-
 #include <stdint.h>
 
 #define ChaCha20StateSizeBytes 48;
