@@ -113,7 +113,7 @@ void ChaCha20EncryptBytes(uint8_t* state, uint8_t* In, uint8_t* Out, uint64_t Si
 				X0_3 = _mm512_xor_si512(X0_3, X0_0);
 				X1_3 = _mm512_xor_si512(X1_3, X1_0);
 				X2_3 = _mm512_xor_si512(X2_3, X2_0);
-				X2_3 = _mm512_xor_si512(X3_3, X3_0);
+				X3_3 = _mm512_xor_si512(X3_3, X3_0);
 
 				X0_3 = _mm512_rol_epi32(X0_3, 16);
 				X1_3 = _mm512_rol_epi32(X1_3, 16);
@@ -717,6 +717,7 @@ void ChaCha20EncryptBytes(uint8_t* state, uint8_t* In, uint8_t* Out, uint64_t Si
 }
 
 #endif
+
 
 
 
