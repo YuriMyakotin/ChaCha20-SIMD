@@ -168,7 +168,7 @@ void ChaCha20EncryptBytes(uint8_t* state, uint8_t* In, uint8_t* Out, uint64_t Si
 				X0_1 = _mm512_rol_epi32(X0_1, 7);
 				X1_1 = _mm512_rol_epi32(X1_1, 7);
 				X2_1 = _mm512_rol_epi32(X2_1, 7);
-				X3_1 = _mm512_rol_epi32(X2_1, 7);
+				X3_1 = _mm512_rol_epi32(X3_1, 7);
 
 
 				X0_1 = _mm512_shuffle_epi32(X0_1, _MM_SHUFFLE(0, 3, 2, 1));
@@ -717,5 +717,6 @@ void ChaCha20EncryptBytes(uint8_t* state, uint8_t* In, uint8_t* Out, uint64_t Si
 }
 
 #endif
+
 
 
